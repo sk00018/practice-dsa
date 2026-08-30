@@ -74,32 +74,44 @@ int main() {
 
 
     
-// Pattern 11:number_palindrome_pattern
+// // Pattern 11:number_palindrome_pattern
 
-    int n = 4;
+//     int n = 4;
     
-    for (int i = 1; i <= n; i++) {
+//     for (int i = 1; i <= n; i++) {
 
-          // num
-        for (int j = 1; j <= i; j++) {
-            cout << j ;
-        }
+//           // num
+//         for (int j = 1; j <= i; j++) {
+//             cout << j ;
+//         }
 
-        // Space
-        for (int j = 1; j <= 2*(n-i); j++) {
-            cout << " ";
-        }
+//         // Space
+//         for (int j = 1; j <= 2*(n-i); j++) {
+//             cout << " ";
+//         }
 
-           // num
-        for (int j = i; j >= 1; j--) {
-            cout << j ;
-        }
+//            // num
+//         for (int j = i; j >= 1; j--) {
+//             cout << j ;
+//         }
 
-        cout << endl;
+//         cout << endl;
         
+//     }
+
+
+
+//  problem 12: Number triangle
+ 
+     int num = 1;
+     int n = 5;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << num << " " ;
+         num = num + 1;
+        }
+        cout << endl;
     }
-
-
 
     return 0;
 }
