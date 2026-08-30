@@ -101,17 +101,34 @@ int main() {
 
 
 
-//  problem 12: Number triangle
+// //  problem 12: Number triangle
  
-     int num = 1;
+//      int num = 1;
+//      int n = 5;
+//     for (int i = 1; i <= n; i++) {
+//         for (int j = 1; j <= i; j++) {
+//             cout << num << " " ;
+//          num = num + 1;
+//         }
+//         cout << endl;
+//     }
+
+
+
+
+
+// //  problem 13: Alphabet Increasing Pattern
+ 
      int n = 5;
+     
     for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= i; j++) {
-            cout << num << " " ;
-         num = num + 1;
-        }
+         for (int j = 1; j <= i; j++){
+            cout << char('A'+j-1) << " " ;
+         }
         cout << endl;
     }
+
+
 
     return 0;
 }
