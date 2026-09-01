@@ -117,14 +117,24 @@ int main() {
 
 
 
-// //  problem 13: Alphabet Increasing Pattern
+// // //  problem 13: Alphabet Increasing Pattern
  
-     int n = 5;
+//      int n = 5;
      
-    for (int i = 1; i <= n; i++) {
-         for (int j = 1; j <= i; j++){
-            cout << char('A'+j-1) << " " ;
-         }
+//     for (int i = 1; i <= n; i++) {
+//          for (int j = 1; j <= i; j++){
+//             cout << char('A'+j-1) << " " ;
+//          }
+//         cout << endl;
+//     }
+
+
+
+ // //  problem 15: reverse Alphabet triangle Pattern
+    for (int i = 5; i >= 1; i--) {
+        for (int j = 0; j < i; j++) {
+            cout << char('A' + j);
+        }
         cout << endl;
     }
 
