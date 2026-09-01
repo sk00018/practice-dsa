@@ -130,10 +130,24 @@ int main() {
 
 
 
- // //  problem 15: Reverse Alphabet triangle Pattern
-    for (int i = 5; i >= 1; i--) {
-        for (int j = 0; j < i; j++) {
-            cout << char('A' + j);
+//  // //  problem 15: Reverse Alphabet triangle Pattern
+//     for (int i = 5; i >= 1; i--) {
+//         for (int j = 0; j < i; j++) {
+//             cout << char('A' + j);
+//         }
+//         cout << endl;
+//     }
+
+
+
+
+// //  problem 16:Repeated Alphabet Pattern
+      
+      int n = 5;
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j <= i; j++) {
+            cout << char('A' + i);
         }
         cout << endl;
     }
