@@ -141,17 +141,38 @@ int main() {
 
 
 
-// //  problem 16:Repeated Alphabet Pattern
+// // //  problem 16:Repeated Alphabet Pattern
       
-      int n = 5;
+//       int n = 5;
+
+//     for (int i = 0; i < n; i++) {
+//         for (int j = 0; j <= i; j++) {
+//             cout << char('A' + i);
+//         }
+//         cout << endl;
+//     }
+
+
+
+
+// // //  problem 17: Palindrome Alphabet Pattern
+
+        int n = 5;
 
     for (int i = 0; i < n; i++) {
+
+        // Increasing part
         for (int j = 0; j <= i; j++) {
-            cout << char('A' + i);
+            cout << char('A' + j);
         }
+
+        // Decreasing part
+        for (int j = i - 1; j >= 0; j--) {
+            cout << char('A' + j);
+        }
+
         cout << endl;
     }
-
 
 
     return 0;
