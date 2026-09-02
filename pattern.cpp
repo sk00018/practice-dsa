@@ -177,20 +177,65 @@ int main() {
 
 
 
-// //  problem 18:Alphabet pyrmaid Pattern
+// // //  problem 18:Alphabet pyrmaid Pattern
+
+//     int n = 5;
+
+//     for (int i = 1; i <= n; i++) {
+
+//         // Spaces
+//         for (int j = 1; j <= n - i; j++) {
+//             cout << " ";
+//         }
+
+//         // Alphabets
+//         for (char ch = 'A' + n - i; ch <= 'E'; ch++) {
+//             cout << ch << " ";
+//         }
+
+//         cout << endl;
+//     }
+
+ 
+
+
+ // //  problem 18: Hollow Hourglass Star Pattern
 
     int n = 5;
 
-    for (int i = 1; i <= n; i++) {
+    // Upper half
+    for (int i = n; i >= 1; i--) {
 
-        // Spaces
-        for (int j = 1; j <= n - i; j++) {
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
+        }
+
+        // Middle space
+        for (int j = 1; j <= 2 * (n - i); j++) {
             cout << " ";
         }
 
-        // Alphabets
-        for (char ch = 'A' + n - i; ch <= 'E'; ch++) {
-            cout << ch << " ";
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
+        }
+
+        cout << endl;
+    }
+
+    // Lower half
+    for (int i = 1; i <= n; i++) {
+
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
+        }
+
+        // Middle space
+        for (int j = 1; j <= 2 * (n - i); j++) {
+            cout << " ";
+        }
+
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
         }
 
         cout << endl;
