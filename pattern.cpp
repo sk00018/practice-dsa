@@ -199,7 +199,7 @@ int main() {
  
 
 
- // //  problem 18: Hollow Hourglass Star Pattern
+ // //  problem 19: Hollow Hourglass Star Pattern
 
     int n = 5;
 
