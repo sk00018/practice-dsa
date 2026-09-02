@@ -155,25 +155,47 @@ int main() {
 
 
 
-// // //  problem 17: Palindrome Alphabet Pattern
+// // // //  problem 17: Palindrome Alphabet Pattern
 
-        int n = 5;
+//         int n = 5;
 
-    for (int i = 0; i < n; i++) {
+//     for (int i = 0; i < n; i++) {
 
-        // Increasing part
-        for (int j = 0; j <= i; j++) {
-            cout << char('A' + j);
+//         // Increasing part
+//         for (int j = 0; j <= i; j++) {
+//             cout << char('A' + j);
+//         }
+
+//         // Decreasing part
+//         for (int j = i - 1; j >= 0; j--) {
+//             cout << char('A' + j);
+//         }
+
+//         cout << endl;
+//     }
+
+
+
+
+// //  problem 18:Alphabet pyrmaid Pattern
+
+    int n = 5;
+
+    for (int i = 1; i <= n; i++) {
+
+        // Spaces
+        for (int j = 1; j <= n - i; j++) {
+            cout << " ";
         }
 
-        // Decreasing part
-        for (int j = i - 1; j >= 0; j--) {
-            cout << char('A' + j);
+        // Alphabets
+        for (char ch = 'A' + n - i; ch <= 'E'; ch++) {
+            cout << ch << " ";
         }
 
         cout << endl;
     }
 
-
+ 
     return 0;
 }
