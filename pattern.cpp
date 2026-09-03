@@ -199,22 +199,70 @@ int main() {
  
 
 
- // //  problem 19: Hollow Hourglass Star Pattern
+//  // //  problem 19: Hollow Hourglass Star Pattern
+
+//     int n = 5;
+
+//     // Upper half
+//     for (int i = n; i >= 1; i--) {
+
+//         for (int j = 1; j <= i; j++) {
+//             cout << "*";
+//         }
+
+//         // Middle space
+//         for (int j = 1; j <= 2 * (n - i); j++) {
+//             cout << " ";
+//         }
+
+//         for (int j = 1; j <= i; j++) {
+//             cout << "*";
+//         }
+
+//         cout << endl;
+//     }
+
+//     // Lower half
+//     for (int i = 1; i <= n; i++) {
+
+//         for (int j = 1; j <= i; j++) {
+//             cout << "*";
+//         }
+
+//         // Middle space
+//         for (int j = 1; j <= 2 * (n - i); j++) {
+//             cout << " ";
+//         }
+
+//         for (int j = 1; j <= i; j++) {
+//             cout << "*";
+//         }
+
+//         cout << endl;
+//     }
+
+    
+
+
+
+// //  problem 20:Hollow Diamond Star Pattern 
 
     int n = 5;
 
     // Upper half
-    for (int i = n; i >= 1; i--) {
+    for (int i = 1; i <= n; i++) {
 
+        // Left stars
         for (int j = 1; j <= i; j++) {
             cout << "*";
         }
 
-        // Middle space
+        // Middle spaces
         for (int j = 1; j <= 2 * (n - i); j++) {
             cout << " ";
         }
 
+        // Right stars
         for (int j = 1; j <= i; j++) {
             cout << "*";
         }
@@ -223,17 +271,19 @@ int main() {
     }
 
     // Lower half
-    for (int i = 1; i <= n; i++) {
+    for (int i = n - 1; i >= 1; i--) {
 
+        // Left stars
         for (int j = 1; j <= i; j++) {
             cout << "*";
         }
 
-        // Middle space
+        // Middle spaces
         for (int j = 1; j <= 2 * (n - i); j++) {
             cout << " ";
         }
 
+        // Right stars
         for (int j = 1; j <= i; j++) {
             cout << "*";
         }
@@ -241,6 +291,6 @@ int main() {
         cout << endl;
     }
 
- 
+  
     return 0;
 }
