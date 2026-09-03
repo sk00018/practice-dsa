@@ -295,21 +295,41 @@ int main() {
 
 
 
-//  problem 20:Hollow Rectangle Square Pattern
+// //  problem 21:Hollow Rectangle Square Pattern
 
 
-    int n = 5;
+//     int n = 5;
 
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= 4; j++) {
-            if (i == 1 || i == n || j == 1 || j == 4)
-                cout << "*";
-            else
-                cout << " ";
+//     for (int i = 1; i <= n; i++) {
+//         for (int j = 1; j <= 4; j++) {
+//             if (i == 1 || i == n || j == 1 || j == 4)
+//                 cout << "*";
+//             else
+//                 cout << " ";
+//         }
+//         cout << endl;
+//     }
+
+    
+
+
+// //  problem 22:Concentric Number Square Pattern
+
+    int n = 4;
+
+    for (int i = 0; i < 2 * n - 1; i++) {
+        for (int j = 0; j < 2 * n - 1; j++) {
+
+            int top = i;
+            int left = j;
+            int right = 2 * n - 2 - j;
+            int bottom = 2 * n - 2 - i;
+
+            cout << n - min(min(top, bottom), min(left, right)) << " ";
         }
+
         cout << endl;
     }
 
-    
     return 0;
 }
