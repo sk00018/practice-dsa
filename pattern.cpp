@@ -245,52 +245,71 @@ int main() {
 
 
 
-// //  problem 20:Hollow Diamond Star Pattern 
+// // //  problem 20: Hollow Diamond Star Pattern
+
+//     int n = 5;
+
+//     // Upper half
+//     for (int i = 1; i <= n; i++) {
+
+//         // Left stars
+//         for (int j = 1; j <= i; j++) {
+//             cout << "*";
+//         }
+
+//         // Middle spaces
+//         for (int j = 1; j <= 2 * (n - i); j++) {
+//             cout << " ";
+//         }
+
+//         // Right stars
+//         for (int j = 1; j <= i; j++) {
+//             cout << "*";
+//         }
+
+//         cout << endl;
+//     }
+
+//     // Lower half
+//     for (int i = n - 1; i >= 1; i--) {
+
+//         // Left stars
+//         for (int j = 1; j <= i; j++) {
+//             cout << "*";
+//         }
+
+//         // Middle spaces
+//         for (int j = 1; j <= 2 * (n - i); j++) {
+//             cout << " ";
+//         }
+
+//         // Right stars
+//         for (int j = 1; j <= i; j++) {
+//             cout << "*";
+//         }
+
+//         cout << endl;
+//     }
+
+  
+
+
+
+//  problem 20:Hollow Rectangle Square Pattern
+
 
     int n = 5;
 
-    // Upper half
     for (int i = 1; i <= n; i++) {
-
-        // Left stars
-        for (int j = 1; j <= i; j++) {
-            cout << "*";
+        for (int j = 1; j <= 4; j++) {
+            if (i == 1 || i == n || j == 1 || j == 4)
+                cout << "*";
+            else
+                cout << " ";
         }
-
-        // Middle spaces
-        for (int j = 1; j <= 2 * (n - i); j++) {
-            cout << " ";
-        }
-
-        // Right stars
-        for (int j = 1; j <= i; j++) {
-            cout << "*";
-        }
-
         cout << endl;
     }
 
-    // Lower half
-    for (int i = n - 1; i >= 1; i--) {
-
-        // Left stars
-        for (int j = 1; j <= i; j++) {
-            cout << "*";
-        }
-
-        // Middle spaces
-        for (int j = 1; j <= 2 * (n - i); j++) {
-            cout << " ";
-        }
-
-        // Right stars
-        for (int j = 1; j <= i; j++) {
-            cout << "*";
-        }
-
-        cout << endl;
-    }
-
-  
+    
     return 0;
 }
