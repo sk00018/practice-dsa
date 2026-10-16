@@ -313,24 +313,44 @@ int main() {
     
 
 
-// //  problem 22:Concentric Number Square Pattern
+// // //  problem 22:Concentric Number Square Pattern
 
-    int n = 4;
+//     int n = 4;
 
-    for (int i = 0; i < 2 * n - 1; i++) {
-        for (int j = 0; j < 2 * n - 1; j++) {
+//     for (int i = 0; i < 2 * n - 1; i++) {
+//         for (int j = 0; j < 2 * n - 1; j++) {
 
-            int top = i;
-            int left = j;
-            int right = 2 * n - 2 - j;
-            int bottom = 2 * n - 2 - i;
+//             int top = i;
+//             int left = j;
+//             int right = 2 * n - 2 - j;
+//             int bottom = 2 * n - 2 - i;
 
-            cout << n - min(min(top, bottom), min(left, right)) << " ";
-        }
+//             cout << n - min(min(top, bottom), min(left, right)) << " ";
+//         }
 
-        cout << endl;
-    }
+//         cout << endl;
+//     }
 
-    return 0; 
+//     return 0; 
      
+// }
+
+
+
+//  problem 23 : Numeric Diamond Window................................
+
+    int n;
+    cout << "Enter n: ";
+    cin >> n;
+
+    for (int r = 0; r < 2 * n - 1; r++) {
+        int i = (r < n) ? r : 2 * n - 2 - r;
+
+        for (int j = 1; j <= n - i; j++) cout << j << " ";
+        for (int j = 0; j < 2 * i; j++) cout << "* ";
+        for (int j = n - i; j >= 1; j--) cout << j << " ";
+
+        cout << "\n";
+    }
+    return 0;
 }
